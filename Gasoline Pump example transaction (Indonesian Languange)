@@ -1,0 +1,2113 @@
+/**
+ *
+ * @author ALFREDO GARCIA ELBARTA TARIGAN
+ * TUGAS AKHIR PEMROGRAMAN DASAR
+ * CONTOH PROGRAM TRANSAKSI DALAM KEHIDUPAN SEHARI-HARI
+ * KELAS B1 JURUSAN SISTEM INFORMASI
+ * 
+ */
+import java.util.*;
+class betatest8
+{
+	public static void main(String []args){
+		Scanner input= new Scanner(System.in);
+		Integer pilihan;
+		System.out.println("\n===========================VIP GASOLINE PUMP===========================");
+		System.out.println("Daftar Ketersediaan Bensin : ");
+		System.out.println("1. PERTALITE		: Rp 7.500 ");
+		System.out.println("2. PERTAMAX  		: Rp 8.250");
+		System.out.println("3. PERTAMAX TURBO 	: Rp 9.250");
+		System.out.println("4. PERTAMAX RACING 	: Rp 42.000");
+		System.out.println("5. DEXLITE 		: Rp 7.300");
+		System.out.println("6. PERTAMINA DEX 	: Rp 8.500");
+		System.out.println("7. SHELL SUPER 		: Rp 8.150");
+		System.out.println("8. SHELL V-POWER 	: Rp 9.250");
+		System.out.println("9. SHELL DIESEL 	: Rp 9.100");
+		System.out.println("=======================================================================");
+		System.out.print("\nMasukkan Pilihan : ");
+		pilihan = input.nextInt();
+	
+	switch(pilihan) 
+	{
+			case 1 :
+				System.out.println("\n====================OPSI PEMBAYARAN====================");
+				System.out.println("1. Via Debit Card");
+				System.out.println("2. Via Credit Card");
+				System.out.println("3. Tunai Cash");
+				System.out.println("=======================================================");
+				
+				Integer pembayaran;	
+					System.out.print("\nInput Pembayaran : ");
+					pembayaran = input.nextInt();
+					
+					switch(pembayaran) {
+							case 1 : 
+								System.out.println("\n========== OPSI DEBIT CARD ==========");
+								System.out.println("1. BCA Debit Card");
+								System.out.println("2. BNI Debit Card");
+								System.out.println("3. BRI Debit Card");
+								System.out.println("4. Mandiri Debit Card");
+								System.out.println("=====================================");
+								Integer debitcard;
+								System.out.print("\nInput Pilihan Debit Card : ");
+								debitcard = input.nextInt();
+									
+										Float tunaicash,a,b,c,d,e;
+										
+
+											if(debitcard == 1) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 7500; 
+												c = a * 5 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTALITE			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b											);
+												System.out.println("  TOTAL DISKON		: 5% 		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d			       		 );
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+												}
+										
+											else if(debitcard == 2) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 7500;
+												c = a * 2 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTALITE			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 2%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 3) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 7500;
+												c = a * 3 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTALITE			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 3%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 4) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat ();
+												a = b * 7500;
+												c = a * 4 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTALITE			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 4%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											else if(debitcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+							case 2 :
+								System.out.println("\n========== OPSI CREDIT CARD ==========");
+								System.out.println("1. BCA Credit Card");
+								System.out.println("2. BNI Credit Card");
+								System.out.println("3. BRI Credit Card");
+								System.out.println("4. Mandiri Credit Card");
+								System.out.println("======================================");
+								Integer creditcard;
+								System.out.print("\nInput Pilihan Credit Card : ");
+								creditcard = input.nextInt();
+
+											if(creditcard == 1) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 7500;
+											c = a * 3 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTALITE			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 3%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											
+											else if(creditcard == 2) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 7500;
+											c = a * 4 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTALITE			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 4%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}	
+											
+											else if(creditcard == 3) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 7500;
+											c = a * 2 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTALITE			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 2%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+													
+											else if(creditcard == 4) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 7500;
+											c = a * 5 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTALITE			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 5%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											else if(creditcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+										
+							case 3 :
+								System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+								b = input.nextFloat();
+								a = b * 7500;
+								System.out.println("\nEstimasi Harga Rp."+a);
+								System.out.print("\nMasukkan Jumlah Uang Tunai yang Dibayar	:   ");
+								tunaicash = input.nextFloat();
+								d = tunaicash-a;
+								System.out.println("\n==========================VIP GASOLINE PUMP========================");
+								System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+								System.out.println("=                        HARAP DATANG KEMBALI			  =");
+								System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+								System.out.println("= ITEM 			: 	PERTALITE			  =");	
+								System.out.println("=-----------------------------------------------------------------=");
+								System.out.println(" TOTAL LITER		:	"+b			             					 );
+								System.out.println(" TOTAL BAYAR		: Rp."+a 			                				  );
+								System.out.println(" TOTAL TUNAI		: Rp."+tunaicash				        					  );
+								if(tunaicash >= + a){
+								System.out.println(" TOTAL KEMBALIAN	: Rp."+ d											  );
+									}
+								else if(tunaicash <= + a){
+								System.out.println(" MOHON MAAF UANG ANDA KURANG Rp."+ d					                  );
+									}
+								System.out.println("===================================================================");
+							return;
+					}
+			case 2 :
+				System.out.println("\n====================OPSI PEMBAYARAN====================");
+				System.out.println("1. Via Debit Card");
+				System.out.println("2. Via Credit Card");
+				System.out.println("3. Tunai Cash");
+				System.out.println("=======================================================");
+
+					System.out.print("\nInput Pembayaran : ");
+					pembayaran = input.nextInt();
+					
+					switch(pembayaran) {
+							case 1 : 
+								System.out.println("\n========== OPSI DEBIT CARD ==========");
+								System.out.println("1. BCA Debit Card");
+								System.out.println("2. BNI Debit Card");
+								System.out.println("3. BRI Debit Card");
+								System.out.println("4. Mandiri Debit Card");
+								System.out.println("=====================================");
+								Integer debitcard;
+								System.out.print("\nInput Pilihan Debit Card : ");
+								debitcard = input.nextInt();
+									
+										Float tunaicash,a,b,c,d,e;
+										
+
+											if(debitcard == 1) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 8250; 
+												c = a * 5 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTAMAX			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 5%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+										
+										
+											else if(debitcard == 2) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 8250;
+												c = a * 2 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTAMAX			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 2%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 3) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 8250;
+												c = a * 3 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTAMAX			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 3%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 4) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat ();
+												a = b * 8250;
+												c = a * 4 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTAMAX			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 4%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											else if(debitcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+							case 2 :
+								System.out.println("\n========== OPSI CREDIT CARD ==========");
+								System.out.println("1. BCA Credit Card");
+								System.out.println("2. BNI Credit Card");
+								System.out.println("3. BRI Credit Card");
+								System.out.println("4. Mandiri Credit Card");
+								System.out.println("======================================");
+								Integer creditcard;
+								System.out.print("\nInput Pilihan Credit Card : ");
+								creditcard = input.nextInt();
+
+											if(creditcard == 1) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 8250;
+											c = a * 3 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTAMAX			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 3%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											
+											else if(creditcard == 2) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 8250;
+											c = a * 4 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTAMAX			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 4%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}	
+											
+											else if(creditcard == 3) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 8250;
+											c = a * 2 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTAMAX			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 2%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+													
+											else if(creditcard == 4) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 8250;
+											c = a * 5 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTAMAX			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 5%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											else if(creditcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+										
+							case 3 :
+								System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+								b = input.nextFloat();
+								a = b * 8250;
+								System.out.println("\nEstimasi Harga Rp."+a);
+								System.out.print("\nMasukkan Jumlah Uang Tunai yang Dibayar	:   ");
+								tunaicash = input.nextFloat();
+								d = tunaicash-a;
+								System.out.println("\n==========================VIP GASOLINE PUMP========================");
+								System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+								System.out.println("=                        HARAP DATANG KEMBALI			  =");
+								System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+								System.out.println("= ITEM 			: 	PERTAMAX			  =");	
+								System.out.println("=-----------------------------------------------------------------=");
+								System.out.println(" TOTAL LITER		:	"+b			             					 );
+								System.out.println(" TOTAL BAYAR		: Rp."+a 			                				  );
+								System.out.println(" TOTAL TUNAI		: Rp."+tunaicash				        					  );
+								if(tunaicash >= + a){
+								System.out.println(" TOTAL KEMBALIAN	: Rp."+ d											  );
+									}
+								else if(tunaicash <= + a){
+								System.out.println(" MOHON MAAF UANG ANDA KURANG Rp."+ d					                  );
+									}
+								System.out.println("========================================================================");
+								 
+							return;
+					}
+			case 3 :
+				System.out.println("\n====================OPSI PEMBAYARAN====================");
+				System.out.println("1. Via Debit Card");
+				System.out.println("2. Via Credit Card");
+				System.out.println("3. Tunai Cash");
+				System.out.println("=======================================================");
+
+					System.out.print("\nInput Pembayaran : ");
+					pembayaran = input.nextInt();
+					
+					switch(pembayaran) {
+							case 1 : 
+								System.out.println("\n========== OPSI DEBIT CARD ==========");
+								System.out.println("1. BCA Debit Card");
+								System.out.println("2. BNI Debit Card");
+								System.out.println("3. BRI Debit Card");
+								System.out.println("4. Mandiri Debit Card");
+								System.out.println("=====================================");
+								Integer debitcard;
+								System.out.print("\nInput Pilihan Debit Card : ");
+								debitcard = input.nextInt();
+									
+										Float tunaicash,a,b,c,d,e;
+										
+
+											if(debitcard == 1) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 9250; 
+												c = a * 5 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTAMAX TURBO			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 5%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+										
+										
+											else if(debitcard == 2) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 9250;
+												c = a * 2 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTAMAX TURBO			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 2%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 3) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 9250;
+												c = a * 3 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTAMAX TURBO			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 3%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 4) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat ();
+												a = b * 9250;
+												c = a * 4 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTAMAX TURBO			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 4%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											else if(debitcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+							case 2 :
+								System.out.println("\n========== OPSI CREDIT CARD ==========");
+								System.out.println("1. BCA Credit Card");
+								System.out.println("2. BNI Credit Card");
+								System.out.println("3. BRI Credit Card");
+								System.out.println("4. Mandiri Credit Card");
+								System.out.println("======================================");
+								Integer creditcard;
+								System.out.print("\nInput Pilihan Credit Card : ");
+								creditcard = input.nextInt();
+
+											if(creditcard == 1) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 9250;
+											c = a * 3 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTAMAX TURBO			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 3%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											
+											else if(creditcard == 2) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 9250;
+											c = a * 4 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTAMAX TURBO			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 4%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}	
+											
+											else if(creditcard == 3) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 9250;
+											c = a * 2 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTAMAX TURBO			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 2%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+													
+											else if(creditcard == 4) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 9250;
+											c = a * 5 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTAMAX TURBO			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 5%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											else if(creditcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+										
+							case 3 :
+								System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+								b = input.nextFloat();
+								a = b * 9250;
+								System.out.println("\nEstimasi Harga Rp."+a);
+								System.out.print("\nMasukkan Jumlah Uang Tunai yang Dibayar	:   ");
+								tunaicash = input.nextFloat();
+								d = tunaicash-a;
+								System.out.println("\n==========================VIP GASOLINE PUMP========================");
+								System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+								System.out.println("=                        HARAP DATANG KEMBALI			  =");
+								System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+								System.out.println("= ITEM 			: 	PERTAMAX TURBO			  =");	
+								System.out.println("=-----------------------------------------------------------------=");
+								System.out.println(" TOTAL LITER		:	"+b			             					 );
+								System.out.println(" TOTAL BAYAR		: Rp."+a 			                				  );
+								System.out.println(" TOTAL TUNAI		: Rp."+tunaicash				        					  );
+								if(tunaicash >= + a){
+								System.out.println(" TOTAL KEMBALIAN	: Rp."+ d											  );
+									}
+								else if(tunaicash <= + a){
+								System.out.println(" MOHON MAAF UANG ANDA KURANG Rp."+ d					                  );
+									}
+								System.out.println("===================================================================");
+								 
+							return;
+					}
+		
+			case 4 :
+				System.out.println("\n====================OPSI PEMBAYARAN====================");
+				System.out.println("1. Via Debit Card");
+				System.out.println("2. Via Credit Card");
+				System.out.println("3. Tunai Cash");
+				System.out.println("=======================================================");
+
+					System.out.print("\nInput Pembayaran : ");
+					pembayaran = input.nextInt();
+					
+					switch(pembayaran) {
+							case 1 : 
+								System.out.println("\n========== OPSI DEBIT CARD ==========");
+								System.out.println("1. BCA Debit Card");
+								System.out.println("2. BNI Debit Card");
+								System.out.println("3. BRI Debit Card");
+								System.out.println("4. Mandiri Debit Card");
+								System.out.println("=====================================");
+								Integer debitcard;
+								System.out.print("\nInput Pilihan Debit Card : ");
+								debitcard = input.nextInt();
+									
+										Float tunaicash,a,b,c,d,e;
+										
+
+											if(debitcard == 1) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 42000; 
+												c = a * 5 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTAMAX RACING			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 5%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+										
+										
+											else if(debitcard == 2) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 42000;
+												c = a * 2 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTAMAX RACING			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 2%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 3) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 42000;
+												c = a * 3 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTAMAX RACING			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 3%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 4) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat ();
+												a = b * 42000;
+												c = a * 4 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTAMAX RACING			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 4%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											else if(debitcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+							case 2 :
+								System.out.println("\n========== OPSI CREDIT CARD ==========");
+								System.out.println("1. BCA Credit Card");
+								System.out.println("2. BNI Credit Card");
+								System.out.println("3. BRI Credit Card");
+								System.out.println("4. Mandiri Credit Card");
+								System.out.println("======================================");
+								Integer creditcard;
+								System.out.print("\nInput Pilihan Credit Card : ");
+								creditcard = input.nextInt();
+
+											if(creditcard == 1) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 42000;
+											c = a * 3 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTAMAX RACING			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 3%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											
+											else if(creditcard == 2) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 42000;
+											c = a * 4 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTAMAX RACING			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 4%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}	
+											
+											else if(creditcard == 3) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 42000;
+											c = a * 2 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTAMAX RACING			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 2%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+													
+											else if(creditcard == 4) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 42000;
+											c = a * 5 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTAMAX RACING			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 5%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											else if(creditcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+										
+							case 3 :
+								System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+								b = input.nextFloat();
+								a = b * 42000;
+								System.out.println("\nEstimasi Harga Rp."+a);
+								System.out.print("\nMasukkan Jumlah Uang Tunai yang Dibayar	:   ");
+								tunaicash = input.nextFloat();
+								d = tunaicash-a;
+								System.out.println("\n==========================VIP GASOLINE PUMP========================");
+								System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+								System.out.println("=                        HARAP DATANG KEMBALI			  =");
+								System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+								System.out.println("= ITEM 			: 	PERTAMAX RACING			  =");	
+								System.out.println("=-----------------------------------------------------------------=");
+								System.out.println(" TOTAL LITER		:	"+b			             					 );
+								System.out.println(" TOTAL BAYAR		: Rp."+a 			                				  );
+								System.out.println(" TOTAL TUNAI		: Rp."+tunaicash				        					  );
+								if(tunaicash >= + a){
+								System.out.println(" TOTAL KEMBALIAN	: Rp."+ d											  );
+									}
+								else if(tunaicash <= + a){
+								System.out.println(" MOHON MAAF UANG ANDA KURANG Rp."+ d					                  );
+									}
+								System.out.println("===================================================================");
+								 
+							return;
+					}
+		
+			case 5 :
+				System.out.println("\n====================OPSI PEMBAYARAN====================");
+				System.out.println("1. Via Debit Card");
+				System.out.println("2. Via Credit Card");
+				System.out.println("3. Tunai Cash");
+				System.out.println("=======================================================");
+
+					System.out.print("\nInput Pembayaran : ");
+					pembayaran = input.nextInt();
+					
+					switch(pembayaran) {
+							case 1 : 
+								System.out.println("\n========== OPSI DEBIT CARD ==========");
+								System.out.println("1. BCA Debit Card");
+								System.out.println("2. BNI Debit Card");
+								System.out.println("3. BRI Debit Card");
+								System.out.println("4. Mandiri Debit Card");
+								System.out.println("=====================================");
+								Integer debitcard;
+								System.out.print("\nInput Pilihan Debit Card : ");
+								debitcard = input.nextInt();
+									
+										Float tunaicash,a,b,c,d,e;
+										
+
+											if(debitcard == 1) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 7300; 
+												c = a * 5 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	DEXLITE			  	  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 5%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+										
+										
+											else if(debitcard == 2) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 7300;
+												c = a * 2 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	DEXLITE			  	  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 2%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 3) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 7300;
+												c = a * 3 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	DEXLITE			  	  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 3%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 4) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat ();
+												a = b * 7300;
+												c = a * 4 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	DEXLITE			  	  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 4%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											else if(debitcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+							case 2 :
+								System.out.println("\n========== OPSI CREDIT CARD ==========");
+								System.out.println("1. BCA Credit Card");
+								System.out.println("2. BNI Credit Card");
+								System.out.println("3. BRI Credit Card");
+								System.out.println("4. Mandiri Credit Card");
+								System.out.println("======================================");
+								Integer creditcard;
+								System.out.print("\nInput Pilihan Credit Card : ");
+								creditcard = input.nextInt();
+
+											if(creditcard == 1) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 7300;
+											c = a * 3 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	DEXLITE			  	  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 3%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											
+											else if(creditcard == 2) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 7300;
+											c = a * 4 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	DEXLITE			  	  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 4%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}	
+											
+											else if(creditcard == 3) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 7300;
+											c = a * 2 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	DEXLITE			  	  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 2%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+													
+											else if(creditcard == 4) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 7300;
+											c = a * 5 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	DEXLITE			  	  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 5%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											else if(creditcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+										
+							case 3 :
+								System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+								b = input.nextFloat();
+								a = b * 7300;
+								System.out.println("\nEstimasi Harga Rp."+a);
+								System.out.print("\nMasukkan Jumlah Uang Tunai yang Dibayar	:   ");
+								tunaicash = input.nextFloat();
+								d = tunaicash-a;
+								System.out.println("\n==========================VIP GASOLINE PUMP========================");
+								System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+								System.out.println("=                        HARAP DATANG KEMBALI			  =");
+								System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+								System.out.println("= ITEM 			: 	DEXLITE			  	  =");	
+								System.out.println("=-----------------------------------------------------------------=");
+								System.out.println(" TOTAL LITER		:	"+b			             					 );
+								System.out.println(" TOTAL BAYAR		: Rp."+a 			                				  );
+								System.out.println(" TOTAL TUNAI		: Rp."+tunaicash				        	 );
+								if(tunaicash >= + a){
+								System.out.println(" TOTAL KEMBALIAN	: Rp."+ d											  );
+									}
+								else if(tunaicash <= + a){
+								System.out.println(" MOHON MAAF UANG ANDA KURANG Rp."+ d					                  );
+									}
+								System.out.println("===================================================================");
+								 
+							return;
+					}
+			case 6 :
+				System.out.println("\n====================OPSI PEMBAYARAN====================");
+				System.out.println("1. Via Debit Card");
+				System.out.println("2. Via Credit Card");
+				System.out.println("3. Tunai Cash");
+				System.out.println("=======================================================");
+
+					System.out.print("\nInput Pembayaran : ");
+					pembayaran = input.nextInt();
+					
+					switch(pembayaran) {
+							case 1 : 
+								System.out.println("\n========== OPSI DEBIT CARD ==========");
+								System.out.println("1. BCA Debit Card");
+								System.out.println("2. BNI Debit Card");
+								System.out.println("3. BRI Debit Card");
+								System.out.println("4. Mandiri Debit Card");
+								System.out.println("=====================================");
+								Integer debitcard;
+								System.out.print("\nInput Pilihan Debit Card : ");
+								debitcard = input.nextInt();
+									
+										Float tunaicash,a,b,c,d,e;
+										
+
+											if(debitcard == 1) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 8500; 
+												c = a * 5 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTAMAX DEX		          =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 5%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+										
+										
+											else if(debitcard == 2) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 8500;
+												c = a * 2 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTAMAX DEX		          =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 2%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 3) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 8500;
+												c = a * 3 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTAMAX DEX		          =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 3%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 4) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat ();
+												a = b * 8500;
+												c = a * 4 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	PERTAMAX DEX		          =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 4%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											else if(debitcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+							case 2 :
+								System.out.println("\n========== OPSI CREDIT CARD ==========");
+								System.out.println("1. BCA Credit Card");
+								System.out.println("2. BNI Credit Card");
+								System.out.println("3. BRI Credit Card");
+								System.out.println("4. Mandiri Credit Card");
+								System.out.println("======================================");
+								Integer creditcard;
+								System.out.print("\nInput Pilihan Credit Card : ");
+								creditcard = input.nextInt();
+
+											if(creditcard == 1) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 8500;
+											c = a * 3 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTAMAX DEX		          =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 3%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											
+											else if(creditcard == 2) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 8500;
+											c = a * 4 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTAMAX DEX		          =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 4%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}	
+											
+											else if(creditcard == 3) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 8500;
+											c = a * 2 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTAMAX DEX		          =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 2%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+													
+											else if(creditcard == 4) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 8500;
+											c = a * 5 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	PERTAMAX DEX		          =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 5%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											else if(creditcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+										
+							case 3 :
+								System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+								b = input.nextFloat();
+								a = b * 8500;
+								System.out.println("\nEstimasi Harga Rp."+a);
+								System.out.print("\nMasukkan Jumlah Uang Tunai yang Dibayar	:  ");
+								tunaicash = input.nextFloat();
+								d = tunaicash-a;
+								System.out.println("\n==========================VIP GASOLINE PUMP========================");
+								System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+								System.out.println("=                        HARAP DATANG KEMBALI			  =");
+								System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+								System.out.println("= ITEM 			: 	PERTAMAX DEX		          =");	
+								System.out.println("=-----------------------------------------------------------------=");
+								System.out.println(" TOTAL LITER		:	"+b			             					 );
+								System.out.println(" TOTAL BAYAR		: Rp."+a 			                				  );
+								System.out.println(" TOTAL TUNAI		: Rp."+tunaicash				        		 );
+								if(tunaicash >= + a){
+								System.out.println(" TOTAL KEMBALIAN	: Rp."+ d											  );
+									}
+								else if(tunaicash <= + a){
+								System.out.println(" MOHON MAAF UANG ANDA KURANG Rp."+ d					                  );
+									}
+								System.out.println("===================================================================");
+								 
+							return;
+					}
+			case 7 :
+				System.out.println("\n====================OPSI PEMBAYARAN====================");
+				System.out.println("1. Via Debit Card");
+				System.out.println("2. Via Credit Card");
+				System.out.println("3. Tunai Cash");
+				System.out.println("=======================================================");
+				
+					System.out.print("\nInput Pembayaran : ");
+					pembayaran = input.nextInt();
+					
+					switch(pembayaran) {
+							case 1 : 
+								System.out.println("\n========== OPSI DEBIT CARD ==========");
+								System.out.println("1. BCA Debit Card");
+								System.out.println("2. BNI Debit Card");
+								System.out.println("3. BRI Debit Card");
+								System.out.println("4. Mandiri Debit Card");
+								System.out.println("=====================================");
+								Integer debitcard;
+								System.out.print("\nInput Pilihan Debit Card : ");
+								debitcard = input.nextInt();
+									
+										Float tunaicash,a,b,c,d,e;
+										
+
+											if(debitcard == 1) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 8150; 
+												c = a * 5 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	SHELL SUPER			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b											);
+												System.out.println("  TOTAL DISKON		: 5% 		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d			       		 );
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+										
+										
+											else if(debitcard == 2) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 8150;
+												c = a * 2 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	SHELL SUPER			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 2%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 3) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 8150;
+												c = a * 3 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	SHELL SUPER			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 3%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 4) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat ();
+												a = b * 8150;
+												c = a * 4 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	SHELL SUPER			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 4%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											else if(debitcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+							case 2 :
+								System.out.println("\n========== OPSI CREDIT CARD ==========");
+								System.out.println("1. BCA Credit Card");
+								System.out.println("2. BNI Credit Card");
+								System.out.println("3. BRI Credit Card");
+								System.out.println("4. Mandiri Credit Card");
+								System.out.println("======================================");
+								Integer creditcard;
+								System.out.print("\nInput Pilihan Credit Card : ");
+								creditcard = input.nextInt();
+
+											if(creditcard == 1) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 8150;
+											c = a * 3 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	SHELL SUPER			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 3%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											
+											else if(creditcard == 2) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 8150;
+											c = a * 4 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	SHELL SUPER			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 4%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}	
+											
+											else if(creditcard == 3) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 8150;
+											c = a * 2 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	SHELL SUPER			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 2%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+													
+											else if(creditcard == 4) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 8150;
+											c = a * 5 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	SHELL SUPER			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 5%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											else if(creditcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+										
+							case 3 :
+								System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+								b = input.nextFloat();
+								a = b * 8150;
+								System.out.println("\nEstimasi Harga Rp."+a);
+								System.out.print("\nMasukkan Jumlah Uang Tunai yang Dibayar	:   ");
+								tunaicash = input.nextFloat();
+								d = tunaicash-a;
+								System.out.println("\n==========================VIP GASOLINE PUMP========================");
+								System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+								System.out.println("=                        HARAP DATANG KEMBALI			  =");
+								System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+								System.out.println("= ITEM 			: 	SHELL SUPER			  =");	
+								System.out.println("=-----------------------------------------------------------------=");
+								System.out.println(" TOTAL LITER		:	"+b			             					 );
+								System.out.println(" TOTAL BAYAR		: Rp."+a 			                				  );
+								System.out.println(" TOTAL TUNAI		: Rp."+tunaicash				        					  );
+								if(tunaicash >= + a){
+								System.out.println(" TOTAL KEMBALIAN	: Rp."+ d											  );
+									}
+								else if(tunaicash <= + a){
+								System.out.println(" MOHON MAAF UANG ANDA KURANG Rp."+ d					                  );
+									}
+								System.out.println("===================================================================");
+							return;
+					}
+			case 8 :
+				System.out.println("\n====================OPSI PEMBAYARAN====================");
+				System.out.println("1. Via Debit Card");
+				System.out.println("2. Via Credit Card");
+				System.out.println("3. Tunai Cash");
+				System.out.println("=======================================================");
+
+					System.out.print("\nInput Pembayaran : ");
+					pembayaran = input.nextInt();
+					
+					switch(pembayaran) {
+							case 1 : 
+								System.out.println("\n========== OPSI DEBIT CARD ==========");
+								System.out.println("1. BCA Debit Card");
+								System.out.println("2. BNI Debit Card");
+								System.out.println("3. BRI Debit Card");
+								System.out.println("4. Mandiri Debit Card");
+								System.out.println("=====================================");
+								Integer debitcard;
+								System.out.print("\nInput Pilihan Debit Card : ");
+								debitcard = input.nextInt();
+									
+										Float tunaicash,a,b,c,d,e;
+										
+
+											if(debitcard == 1) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 9250; 
+												c = a * 5 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	SHELL V-POWER			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 5%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+										
+										
+											else if(debitcard == 2) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 9250;
+												c = a * 2 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	SHELL V-POWER			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 2%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 3) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 9250;
+												c = a * 3 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	SHELL V-POWER			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 3%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 4) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat ();
+												a = b * 9250;
+												c = a * 4 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	SHELL V-POWER			  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 4%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											else if(debitcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+							case 2 :
+								System.out.println("\n========== OPSI CREDIT CARD ==========");
+								System.out.println("1. BCA Credit Card");
+								System.out.println("2. BNI Credit Card");
+								System.out.println("3. BRI Credit Card");
+								System.out.println("4. Mandiri Credit Card");
+								System.out.println("======================================");
+								Integer creditcard;
+								System.out.print("\nInput Pilihan Credit Card : ");
+								creditcard = input.nextInt();
+
+											if(creditcard == 1) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 9250;
+											c = a * 3 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	SHELL V-POWER			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 3%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											
+											else if(creditcard == 2) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 9250;
+											c = a * 4 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	SHELL V-POWER			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 4%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}	
+											
+											else if(creditcard == 3) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 9250;
+											c = a * 2 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	SHELL V-POWER			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 2%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+													
+											else if(creditcard == 4) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 9250;
+											c = a * 5 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	SHELL V-POWER			  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 5%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											else if(creditcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+										
+							case 3 :
+								System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+								b = input.nextFloat();
+								a = b * 9250;
+								System.out.println("\nEstimasi Harga Rp."+a);
+								System.out.print("\nMasukkan Jumlah Uang Tunai yang Dibayar	:   ");
+								tunaicash = input.nextFloat();
+								d = tunaicash-a;
+								System.out.println("\n==========================VIP GASOLINE PUMP========================");
+								System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+								System.out.println("=                        HARAP DATANG KEMBALI			  =");
+								System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+								System.out.println("= ITEM 			: 	SHELL V-POWER			  =");	
+								System.out.println("=-----------------------------------------------------------------=");
+								System.out.println(" TOTAL LITER		:	"+b			             					 );
+								System.out.println(" TOTAL BAYAR		: Rp."+a 			                				  );
+								System.out.println(" TOTAL TUNAI		: Rp."+tunaicash				        					  );
+								if(tunaicash >= + a){
+								System.out.println(" TOTAL KEMBALIAN	: Rp."+ d											  );
+									}
+								else if(tunaicash <= + a){
+								System.out.println(" MOHON MAAF UANG ANDA KURANG Rp."+ d					                  );
+									}
+								System.out.println("===================================================================");
+								 
+							return;
+					}
+			case 9 :
+				System.out.println("\n====================OPSI PEMBAYARAN====================");
+				System.out.println("1. Via Debit Card");
+				System.out.println("2. Via Credit Card");
+				System.out.println("3. Tunai Cash");
+				System.out.println("=======================================================");
+				
+					System.out.print("\nInput Pembayaran : ");
+					pembayaran = input.nextInt();
+					
+					switch(pembayaran) {
+							case 1 : 
+								System.out.println("\n========== OPSI DEBIT CARD ==========");
+								System.out.println("1. BCA Debit Card");
+								System.out.println("2. BNI Debit Card");
+								System.out.println("3. BRI Debit Card");
+								System.out.println("4. Mandiri Debit Card");
+								System.out.println("=====================================");
+								Integer debitcard;
+								System.out.print("\nInput Pilihan Debit Card : ");
+								debitcard = input.nextInt();
+									
+										Float tunaicash,a,b,c,d,e;
+										
+											if(debitcard == 1) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 9100; 
+												c = a * 5 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	SHELL DIESEL		  	  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b											);
+												System.out.println("  TOTAL DISKON		: 5% 		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d			       		 );
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+										
+										
+											else if(debitcard == 2) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 9100;
+												c = a * 2 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	SHELL DIESEL		  	  =");	
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 2%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 3) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat();
+												a = b * 9100;
+												c = a * 3 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	SHELL DIESEL		  	  =");		
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 3%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											
+											else if(debitcard == 4) {
+												System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+												b = input.nextFloat ();
+												a = b * 9100;
+												c = a * 4 / 100;
+												d = a - c;
+												e = a - d;
+												System.out.println("\n==========================VIP GASOLINE PUMP========================");
+												System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+												System.out.println("=                        HARAP DATANG KEMBALI			  =");
+												System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+												System.out.println("= ITEM 			: 	SHELL DIESEL		  	  =");		
+												System.out.println("=-----------------------------------------------------------------=");
+												System.out.println("  TOTAL LITER		: "+b		);
+												System.out.println("  TOTAL DISKON		: 4%		");
+												System.out.println("  TOTAL BAYAR		: Rp."+d	);
+												System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+												System.out.println("===================================================================");
+											}
+											else if(debitcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+							case 2 :
+								System.out.println("\n========== OPSI CREDIT CARD ==========");
+								System.out.println("1. BCA Credit Card");
+								System.out.println("2. BNI Credit Card");
+								System.out.println("3. BRI Credit Card");
+								System.out.println("4. Mandiri Credit Card");
+								System.out.println("======================================");
+								Integer creditcard;
+								System.out.print("\nInput Pilihan Credit Card : ");
+								creditcard = input.nextInt();
+
+											if(creditcard == 1) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 9100;
+											c = a * 3 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	SHELL DIESEL		  	  =");		
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 3%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											
+											else if(creditcard == 2) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 9100;
+											c = a * 4 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	SHELL DIESEL		  	  =");	
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 4%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}	
+											
+											else if(creditcard == 3) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 9100;
+											c = a * 2 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	SHELL DIESEL		  	  =");		
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 2%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+													
+											else if(creditcard == 4) {
+											System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+											b = input.nextFloat();
+											a = b * 9100;
+											c = a * 5 / 100;
+											d = a - c;
+											e = a - d;
+											System.out.println("\n==========================VIP GASOLINE PUMP========================");
+											System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+											System.out.println("=                        HARAP DATANG KEMBALI			  =");
+											System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+											System.out.println("= ITEM 			: 	SHELL DIESEL		  	  =");		
+											System.out.println("=-----------------------------------------------------------------=");
+											System.out.println("  TOTAL LITER		: "+b		);
+											System.out.println("  TOTAL DISKON		: 5%		");
+											System.out.println("  TOTAL BAYAR		: Rp."+d	);
+											System.out.println("  ANDA HEMAT 		: Rp."+e 	);
+											System.out.println("===================================================================");
+											}
+											else if(creditcard >= 4) {
+												System.out.println(" Input yang anda masukkan salah, harap periksa kembali");
+											}
+										return;
+										
+							case 3 :
+								System.out.print("\nMasukkan Jumlah Bensin yang akan diisi 	:  ");
+								b = input.nextFloat();
+								a = b * 9100;
+								System.out.println("\nEstimasi Harga Rp."+a);
+								System.out.print("\nMasukkan Jumlah Uang Tunai yang Dibayar	:   ");
+								tunaicash = input.nextFloat();
+								d = tunaicash-a;
+								System.out.println("\n==========================VIP GASOLINE PUMP========================");
+								System.out.println("=       TERIMA KASIH SUDAH MENGISI BENSIN DI VIP GASOLINE PUMP    =");
+								System.out.println("=                        HARAP DATANG KEMBALI			  =");
+								System.out.println("=     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++   =");
+								System.out.println("= ITEM 			: 	SHELL DIESEL		  	  =");		
+								System.out.println("=-----------------------------------------------------------------=");
+								System.out.println(" TOTAL LITER		:	"+b			             					 );
+								System.out.println(" TOTAL BAYAR		: Rp."+a 			                				  );
+								System.out.println(" TOTAL TUNAI		: Rp."+tunaicash				        					  );
+								if(tunaicash >= + a){
+								System.out.println(" TOTAL KEMBALIAN	: Rp."+ d											  );
+									}
+								else if(tunaicash <= + a){
+								System.out.println(" MOHON MAAF UANG ANDA KURANG Rp."+ d					                  );
+									}
+								System.out.println("===================================================================");
+							return;
+					}	
+		default:
+		System.out.println("Input yang anda masukkan salah, harap periksa kembali");
+	}
+	}
+}
